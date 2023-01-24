@@ -1,0 +1,36 @@
+.pantalladividida {
+    display: flex;
+}
+.izquierda{
+    float: left;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    width: 50%;
+    margin: 5px;
+}
+.derecha{
+    float: right;
+    border: 2px;
+    width: 50%;
+    border-style: solid;
+    border-color: red;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .pantalladividida{
+        display: block;
+    }
+    .derecha{
+        float: left;
+        width: 100%;
+        margin: 10px;
+    }
+    .izquierda{
+        float: left;
+        width: 100%;
+        margin:10px;
+        margin-right: 10px;
+    }
+}
